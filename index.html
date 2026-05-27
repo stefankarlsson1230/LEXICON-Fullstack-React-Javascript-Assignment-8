@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Exercises</h1>
+        <select id="chooseExercise">
+            <option value="">Choose exercise</option>
+            <option value="ex1">Exercise 1</option>
+            <option value="ex2">Exercise 2</option>
+            <option value="ex3">Exercise 3</option>
+            <option value="ex4">Exercise 4</option>
+            <option value="ex5">Exercise 5</option>
+            <option value="ex6">Exercise 6</option>
+            <option value="ex7">Exercise 7</option>
+            <option value="ex8">Exercise 8</option>
+            <option value="ex9">Exercise 9</option>
+            <option value="ex10">Exercise 10</option>
+            <option value="ex11">Exercise 11</option>
+            <option value="ex12">Exercise 12</option>
+            <option value="ex13">Exercise 13</option>
+            <option value="ex14">Exercise 14</option>
+            <option value="ex15">Exercise 15</option>
+            <option value="ex16">Exercise 16</option>
+            <option value="ex17">Exercise 17</option>
+            <option value="ex18">Exercise 18</option>
+            <option value="ex19">Exercise 19</option>
+            <option value="ex20">Exercise 20</option>
+        </select>
+    </header>
+    <hr>
+    <main>
+
+        <!-------------------- Exercise 1 -------------------->
+        
+        <article id="ex1">
+            <h2>Exercise 1</h2>
+            <p>Add an element to your page that displays the current date, time and which day of the week it is, and write
+            a JavaScript script that updates it every second so that it always shows the current time.</p>
+            <p>Example: <em>Wednesday, 2024-03-13 13:29:17</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>A text display on the page, showing weekday, date, and time.</li>
+                    <li>The time should be updated in real time, to ensure it stays accurate.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p><span class="bold">Current time:</span> <span id="ex1Weekday"></span>, <span id="ex1Date"></span> <span id="ex1Time"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 2 -------------------->
+        
+         <article id="ex2">
+            <h2>Exercise 2</h2>
+            <p>Add an input field that lets you enter a year, and tie a script to it that checks whether the year entered is a leap year or not when trigged by a push of a button</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a year and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that checks whether the year entered is a leap year, and presents the result on the page, as a message.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex2year" class="bold">Enter a year: </label>
+                <input id="ex2year" type="number" min="1" max="9999">
+                <button id="ex2Button" type="button">Check year</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex2Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 3 -------------------->
+
+         <article id="ex3">
+            <h2>Exercise 3</h2>
+            <p>Write a script that checks whether January 1st on any given year is a Sunday.</p>
+            <p>Example: <em>Input: 2024 - Expected output: Not a Sunday (or that it instead is a Monday)</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a year and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that checks whether January 1st falls on a Sunday that year</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex3year" class="bold">Enter a year: </label>
+                <input id="ex3year" type="number" min="1" max="9999">
+                <button id="ex3Button" type="button">Check year</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex3Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 4 -------------------->
+
+         <article id="ex4">
+            <h2>Exercise 4</h2>
+            <p>Add an input field that lets you enter a number between 1 and 10, and tie a script to it that checks whether the number entered is the same as a random number created by the script.</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a number and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that checks whether the number entered is the same as the random number, and presents the result on the page, as a message either “Good Job” if guess is correct or “Did not
+                        match” if the numbers are not the same.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex4Number" class="bold">Enter a number (1 - 10): </label>
+                <input id="ex4Number" type="number" min="1" max="10">
+                <button id="ex4Button" type="button">Guess</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex4Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 5 -------------------->
+
+         <article id="ex5">
+            <h2>Exercise 5</h2>
+            <p>Add an element to your page that displays the days until Christmas</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>A text display on the page, showing the number of days.</li>
+                    <li>If run between Christmas and New Year then it should report days until Christmas next year.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl" ><span class="bold">Days until Christmas: </span> <span id="ex5Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 6 -------------------->
+
+         <article id="ex6">
+            <h2>Exercise 6</h2>
+            <p>Add an input field that lets you enter a string of numbers or characters, and tie a script to it that reverses the input and prints it on the page</p>
+            <p>Example: <em>Input: Abc123 &nbsp;&nbsp;&nbsp; Expected output: 321cbA</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a string of numbers or characters and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that reverses the input, and presents the result on the page, as a message.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex6Input" class="bold">Enter a text: </label>
+                <input id="ex6Input" type="text">
+                <button id="ex6Button" type="button">Reverse</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex6Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 7 -------------------->
+
+         <article id="ex7">
+            <h2>Exercise 7</h2>
+            <p>Add an input field that lets you enter a word, and tie a script to it that generates all combinations of that word. The order of the character should be kept the same</p>
+            <p>Example: <em>Input: “Text” &nbsp;&nbsp;&nbsp; Expected output: T, Te, Tex, Text, e, ex, ext, x, xt, t</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a word and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that manipulates the string and generates all combinations, and presents the result on the page, as a message.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex7Input" class="bold">Enter a text: </label>
+                <input id="ex7Input" type="text">
+                <button id="ex7Button" type="button">Reverse</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex7Result"></span></p>
+
+
+        </article>
+        
+        <!-------------------- Exercise 8 -------------------->
+
+         <article id="ex8">
+            <h2>Exercise 8</h2>
+            <p>Add an input field that lets you enter a word, and tie a script to it that organizes the letters in alphabetical order and displays it</p>
+            <p>Example: <em>Input: “javascript” &nbsp;&nbsp; Expected output: aaijprstv</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a word and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that manipulates the string and puts the letters in alphabetical order, and presents the result on the page, as a message.</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex8Input" class="bold">Enter a word: </label>
+                <input id="ex8Input" type="text">
+                <button id="ex8Button" type="button">Alphabetize</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex8Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 9 -------------------->
+
+         <article id="ex9">
+            <h2>Exercise 9</h2>
+            <p>Add an input field that lets you enter a sentence, and tie a script to it does two things; first converts the first letter of each word to upper case and second finds the word with the most letters.</p>
+            <p>Example: <em>Input: “welcome to JavaScript” &nbsp;&nbsp; Expected output: Welcome To JavaScript – the longest word is JavaScript</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a sentence and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that manipulates the string and presents the result on the page</li>
+                    <li>Converts the first letter of each word</li>
+                    <li> Finds the longest word</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex9Input" class="bold">Enter a sentence: </label>
+                <input id="ex9Input" type="text">
+                <button id="ex9Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex9Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 10 -------------------->
+
+         <article id="ex10">
+            <h2>Exercise 10</h2>
+            <p>Add an input field that lets you enter a number, and tie a script to it that checks whether the number entered is a prime or not.</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a number and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that checks whether the number entered is a prime, and presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+
+            <p class="pInBl">
+                <label for="ex10Input" class="bold">Enter a number: </label>
+                <input id="ex10Input" type="number" min="1">
+                <button id="ex10Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex10Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 11 -------------------->
+
+         <article id="ex11">
+            <h2>Exercise 11</h2>
+            <p>Create a method in JavaScript that accepts a single value as a parameter. The method should log the value type of the parameter to the console, no matter what it is (if a string is sent in, it should output “string” to the console, etc.).</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a value and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that checks the type of the value entered and presents the result on the page, as a message.</li>
+                </ul>
+            </p>
+            <hr>
+            <p>This exercise can not be completed as written as everything entered will be of type string. I will instead se if the value can be converted to a Boolean (only lowercase true/false) or a Number, otherwise it will be a String. </p>
+            <p class="pInBl">
+                <label for="ex11Input" class="bold">Enter something: </label>
+                <input id="ex11Input" type="text">
+                <button id="ex11Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex11Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 12 -------------------->
+
+         <article id="ex12">
+            <h2>Exercise 12</h2>
+            <p>Add a script for loop that will iterate from 0-15 and for every iteration display if the number is even or odd.</p>
+            <p>Example: <em>Expected output: “0 is even” “1 is odd” “2 is even” “3 is odd”…</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>A script that will loop for 15 times and display if the current number is even or odd and presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex12Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 13 -------------------->
+
+         <article id="ex13">
+            <h2>Exercise 13</h2>
+            <p>Add a script to display the first 10 “happy numbers”.</p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>A script that will find the first 10 happy numbers and presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl" ><span class="bold">Happy Numbers: </span> <span id="ex13Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 14 -------------------->
+
+         <article id="ex14">
+            <h2>Exercise 14</h2>
+            <p>Add a script to join the elements in an array into a string and display it.</p>
+            <p>Example: <em>Input: var workDays = [“Monday”, “Tuesday”, “Wednesday”, “Thursday”, “Friday”]; &nbsp;&nbsp;
+                Expected output: Monday, Tuesday, Wednesday, Thursday and Friday are workdays</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li> A script that will take the variables in an array and join them into a string and presents the result on the page, as a message </li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex14Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 15 -------------------->
+
+         <article id="ex15">
+            <h2>Exercise 15</h2>
+            <p>Add a script that will sort the numbers in an array according to size and display it</p>
+            <p>Example: <em>Input: var numbers = [4, 1, 9, -2, 5] &nbsp;&nbsp; Expected output: -2, 1, 4, 5, 9. </em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes an array of numbers and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that will take the numbers in an array and sort the according to size and presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl">
+                <label for="ex15Input" class="bold">Enter comma separated numbers: </label>
+                <input id="ex15Input" type="text">
+                <button id="ex15Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex15Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 16 -------------------->
+
+         <article id="ex16">
+            <h2>Exercise 16</h2>
+            <p>Add a script that will remove duplicates items in an array</p>
+            <p>Example: <em>Input: var numbers = [4, 17, -2, 4, 7, 4, 17, 42] &nbsp;&nbsp; Expected output: 4, 17, -2, 7, 42</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes an array of items and calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that will find the duplicates of items in the array and presents the result on the page, as a message </li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl">
+                <label for="ex16Input" class="bold">Enter comma separated list: </label>
+                <input id="ex16Input" type="text">
+                <button id="ex16Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex16Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 17 -------------------->
+
+         <article id="ex17">
+            <h2>Exercise 17</h2>
+            <p>Add a script that will remove the 'null' and '0' values in an array.</p>
+            <p>Example: <em>Input: var numbers = [3, 4, , 6, 0, 8] &nbsp;&nbsp; Expected output: 3, 4, 6, 8</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes an array of values and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that will find the 'null and '0' values in the array and presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl">
+                <label for="ex17Input" class="bold">Enter comma separated numbers: </label>
+                <input id="ex17Input" type="text">
+                <button id="ex17Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex17Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 18 -------------------->
+
+         <article id="ex18">
+            <h2>Exercise 18</h2>
+            <p>Add a script that will find and display the number of days in a given month</p>
+            <p>Example: <em>Input: February 2024 &nbsp;&nbsp; Expected output: 29 days</em></p>
+            <p>Example: <em>Input: February 1712 &nbsp;&nbsp; Expected output: 30 days</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>Two input fields that takes a month and a year and then calls the script when submitted. The page should not be refreshed</li>
+                    <li>A script that will find the month and year and gets the number of days in that month and presents the result on the page, as a message </li>
+                </ul>
+            </p>
+            <hr>
+            <em>Apparently feb in 1712 was an unique exception with 30 days.</em><br>
+            <p class="pInBl">
+                <label for="ex18InputYear" class="bold">Year: </label>
+                <input id="ex18InputYear" type="number">
+                <label for="ex18InputMonth" class="bold">Month: </label>
+                <select id="ex18InputMonth">
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                <button id="ex18Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex18Result"></span></p>
+
+        </article>
+        
+        <!-------------------- Exercise 19 -------------------->
+
+         <article id="ex19">
+            <h2>Exercise 19</h2>
+            <p>Add a script that will convert the number of minutes into hours and minutes</p>
+            <p>Example: <em>Input: 92 &nbsp;&nbsp; Expected output: 1 hour(s) and 32 minute(s).</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that take the number of minutes and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that will convert the number of minutes into the number of hours and minutes and presents the result on the page, as a message </li>
+                </ul>
+            </p>
+            <hr>
+            <p class="pInBl">
+                <label for="ex19Input" class="bold">Number of minutes: </label>
+                <input id="ex19Input" type="number" min="0">
+                <button id="ex19Button" type="button">Calculate</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex19Result"></span></p>
+        </article>
+        
+        <!-------------------- Exercise 20 -------------------->
+
+         <article id="ex20">
+            <h2>Exercise 20</h2>
+            <p>Add a script that will calculate the time difference from a given year to now.</p>
+            <p>Example: <em>Input: 1980 &nbsp;&nbsp; Expected output: 1980 was 44 years ago. (assuming current year is 2024)</em></p>
+            <p><strong>Required Features:</strong>
+                <ul>
+                    <li>An input field that takes a year and calls the script when submitted. The page should not be refreshed.</li>
+                    <li>A script that will calculate the time from the input until today presents the result on the page, as a message</li>
+                </ul>
+            </p>
+            <hr>
+             <p class="pInBl">
+                <label for="ex20Input" class="bold">Year: </label>
+                <input id="ex20Input" type="number">
+                <button id="ex20Button" type="button">Click</button>
+            </p>  
+            <p class="pInBl" ><span class="bold">Result: </span> <span id="ex20Result"></span></p>
+
+        </article>
+        
+        <!--------------------------------------------------->
+
+    </main>
+    <script src="content/js/site.js"></script>
+</body>
+</html>
+
