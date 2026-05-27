@@ -224,7 +224,11 @@ function ex10CheckIfPrime() {
     let ex10isPrime = true;
     let ex10Number = Number(ex10Input.value);
 
+<<<<<<< HEAD
     if (ex10Number <= 1) ex10isPrime = false;
+=======
+    if (ex10Number === 1) ex10isPrime = false;
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
     else if (ex10Number === 2) ex10isPrime = true;
     else {
         for (let i = 2; i < ex10Number; i++) {
@@ -246,10 +250,16 @@ const ex11ResultOutput = document.getElementById('ex11Result');
 ex11Button.addEventListener('click', ex11Convert);
 
 function ex11Convert() {
+<<<<<<< HEAD
     const ex11Value = ex11Input.value.trim();
     if (ex11Value === 'true' || ex11Value === 'false') ex11ResultOutput.innerText = `${ex11Value} is a Boolean`;
     else if (!Number.isNaN(Number(ex11Value))) ex11ResultOutput.innerText = `${ex11Value} is a Number`;
     else ex11ResultOutput.innerText = `${ex11Value} is just a string`;
+=======
+    if (ex11Input.value === 'true' || ex11Input.value === 'false') ex11ResultOutput.innerText = `${ex11Input.value} is a Boolean`;
+    else if (!Number.isNaN(Number(ex11Input.value))) ex11ResultOutput.innerText = `${ex11Input.value} is a Number`;
+    else ex11ResultOutput.innerText = `${ex11Input.value} is just a string`;
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
 }
 
 
@@ -258,6 +268,7 @@ function ex11Convert() {
 const ex12ResultOutput = document.getElementById('ex12Result'); 
 
 function ex12Loop() {
+<<<<<<< HEAD
     let ex12Str = '';
 
     for(let i = 0; i <= 15; i++) {
@@ -270,6 +281,18 @@ function ex12Loop() {
 
 ex12Loop();
 
+=======
+    ex12Str = '';
+
+    for(let i = 0; i <= 15; i++) {
+        if (i % 2 === 0) ex12Str += `${i} is even  |  `;
+        else ex12Str += `${i} is odd  |  `;
+    }
+}
+
+ex12Loop();
+ex12ResultOutput.innerText = ex12Str;
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
 
 
 // -------------------- Exercise 13 --------------------
@@ -356,11 +379,14 @@ ex16Button.addEventListener('click', ex16RemoveDuplicates);
 
 function ex16RemoveDuplicates() {
     let oldArray = ex16Input.value.split(',');
+<<<<<<< HEAD
     
     for(let i = 0; i < oldArray.length; i++) {
         oldArray[i] = oldArray[i].trim();
     }
     
+=======
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
     let newArray = [];
 
     for(let a of oldArray) {
@@ -383,10 +409,13 @@ ex17Button.addEventListener('click', ex17RemoveEmpty);
 
 function ex17RemoveEmpty() {
     let oldArray = ex17Input.value.split(',');
+<<<<<<< HEAD
     for(let i = 0; i < oldArray.length; i++) {
         oldArray[i] = oldArray[i].trim();
     }
 
+=======
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
     let newArray = [];
 
     for(let i = 0; i < oldArray.length; i++) {
@@ -458,7 +487,11 @@ ex19Button.addEventListener('click', ex19Calculate);
 function ex19Calculate() {
     let min = Number(ex19Input.value);
 
+<<<<<<< HEAD
     ex19ResultOutput.innerText = `${Math.floor(min / 60)} hour(s) and ${min % 60} minute(s).`;
+=======
+    ex19ResultOutput.innerText = `${Math.floor(min / 60)} hour(s) and ${min % 60} minutes(s).`;
+>>>>>>> 39b78f5ded283b55387d502208a1079f94f95e2a
 }
 
 
